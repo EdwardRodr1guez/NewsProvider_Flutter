@@ -95,6 +95,9 @@ class _TarjetaImagen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
        //padding: EdgeInsets.symmetric(horizontal: 15),
-        child: Text('Imagen'));
+        child: FadeInImage(
+          placeholder: AssetImage('assets/img/giphy.gif') ,
+          image: NetworkImage(noticia.urlToImage!),
+        ));
   }
 }
